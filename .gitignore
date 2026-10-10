@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Rahasia & data lokal: jangan pernah di-commit
+auth_config.json
+gas_memorized_cache.json

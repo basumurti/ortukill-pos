@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-coral-primary: #FF5E36;
+  --color-coral-hover: #F24E24;
+  --color-coral-light: #FFF2ED;
+  --color-peach-accent: #FFA07A;
+  --color-surface-warm: #EEF1F6;
+  --color-surface-card: #FFFFFF;
+}
+
+:root {
+  color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #EEF1F6;
+  color: #1A1D20;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
+
+/* Custom scrollbar for mobile feel */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Soft Neumorphic & Tactile Card Shadows */
+.shadow-soft-card {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+}
+
+.shadow-floating-nav {
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+}
+
+.shadow-glow-coral {
+  box-shadow: 0 12px 28px -6px rgba(255, 94, 54, 0.28);
+}
+
+/* Hide scrollbar for category horizontal chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth transitions */
+@media (prefers-reduced-motion: no-preference) {
+  .transition-spring {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* Safe area insets for mobile devices */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1.25rem);
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  #thermal-receipt-container {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
+

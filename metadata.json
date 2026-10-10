@@ -1,0 +1,6 @@
+{
+  "name": "ORTUKILL POS",
+  "description": "Aplikasi Kasir POS modern untuk ORTUKILL (Orang Tua Keliling Kediri) dengan transaksi hari ini, rekap kasir, manajemen stok, dan integrasi Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

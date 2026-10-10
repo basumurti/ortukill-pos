@@ -1,0 +1,14 @@
+{
+  "webAppUrl": "https://script.google.com/macros/s/AKfycbx4NPmzfYJbGAXmgBM4KvRT4V9vN3CnWL3klU1xtYoW3pOxgVCVGVIm1YFLpSOJRTvBxw/exec",
+  "primaryWebAppUrl": "https://script.google.com/macros/s/AKfycbx4NPmzfYJbGAXmgBM4KvRT4V9vN3CnWL3klU1xtYoW3pOxgVCVGVIm1YFLpSOJRTvBxw/exec",
+  "sheetConfig": {
+    "productsSheet": "DASHBOARD_MUTASI_&_PROFIT",
+    "productRange": "B70:J",
+    "salesLogSheet": "LOG_PENJUALAN",
+    "barangMasukSheet": "LOG_BARANG_MASUK",
+    "productStartRow": 70,
+    "salesLogStartRow": 7,
+    "barangMasukStartRow": 4
+  },
+  "lastSynced": "2026-10-10T08:09:16.635Z"
+}

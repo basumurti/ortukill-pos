@@ -1,0 +1,9 @@
+# Added locally so the app can run on this machine.
+# pnpm's default isolated linker uses junctions, which Node cannot resolve
+# on this OneDrive-backed folder, breaking esbuild's platform binary lookup.
+nodeLinker: hoisted
+
+allowBuilds:
+  '@google/genai': true
+  esbuild: true
+  protobufjs: true
